@@ -1,0 +1,22 @@
+{
+  "name": "bun-dap-shim",
+  "module": "bun-dap-shim.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun build --production --target=node --outdir=dist ./bun-dap-shim.ts"
+  },
+  "workspaces": [
+    ".",
+    "bun/packages/*"
+  ],
+  "dependencies": {
+    "bun-debug-adapter-protocol": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
