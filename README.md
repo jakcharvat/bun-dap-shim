@@ -1,9 +1,9 @@
 # bun-dap-shim
 
 A Debug Adapter Protocol (DAP) shim for Bun that bridges communication between Bun's WebSocket debug
-adapter and DAP clients like VS Code or Zed. It connects to Bun's debug adapter and forwards
-messages from the client over standard IO to the Bun debug adapter, which talks with the Bun
-inspector over WebSockets.
+adapter and DAP clients communicating over standard IO (like Zed or Neovim). It connects to Bun's
+debug adapter and forwards messages from a stdio connection with the client the Bun debug adapter,
+which talks with the Bun inspector over a WebSocket.
 
 ## Setup
 
